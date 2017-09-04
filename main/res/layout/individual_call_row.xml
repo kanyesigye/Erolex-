@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    tools:ignore="UnusedAttribute"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="5dp"
+    android:layout_margin="8dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#ff0aad"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/vendor_joint_name"
+            android:textStyle="bold|italic"
+            android:textColor="#ff0aad"
+            android:text="Name of Rolex joint"
+            android:textSize="12sp"
+            android:background="@drawable/border"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#ff0aad"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/vendor_mobile"
+            android:textStyle="bold|italic"
+            android:textSize="12sp"
+            android:textColor="#ff0aad"
+            android:background="@drawable/border"
+            android:text="contact phone number"
+            tools:ignore="HardcodedText" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#ff0aad"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

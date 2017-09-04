@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vendor_contacts">vcts</string>
+    <string name="abt">About</string>
+    <string name="editmenu">Edit Rolex Menu</string>
+    <string name="debtors">Debtors</string>
+    <string name="home">Home</string>
+    <string name="conf">confirmed</string>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/tooedit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:orientation="vertical"
+                                 >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESERVATION"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="#00000000"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/stat_sys_phone_call" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:textColorHint="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="#00000000"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <Spinner
+                android:id="@+id/date"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:entries="@array/chrona"
+                android:textSize="16sp"
+                android:background="#fff"
+                android:textColor="#fff"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#5fff"/>
+            <Spinner
+                android:id="@+id/time"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:textColorHint="#fff"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/time"
+                android:background="#fff"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <Spinner
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="#fff"
+                android:entries="@array/notes"
+                android:textSize="16sp"
+                android:popupTheme="@color/cardview_light_background"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            style="?android:attr/buttonBarButtonStyle">
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:onClick="setValue"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="#00000000"
+                android:textSize="30sp"
+                android:textColor="@color/colorAccent"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:onClick="setValue"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/checkbox_on_background" />
+            <TextView
+                android:id="@+id/make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make Reservation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:onClick="onReserve"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myloc"
+            android:text="your location"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

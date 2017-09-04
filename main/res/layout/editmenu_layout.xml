@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:text="Already have an account? Tap here to proceed"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="justLogin"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_report_image"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/title"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:entries="@array/rolex"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Add ingredients of the rolex"
+            android:inputType="textMultiLine"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Price"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Name of Business"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:text="set GPS Location "
+            android:textColor="#fff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:onClick="addMenu"
+        android:padding="15dp"
+        android:text="SAVE MENU"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+</LinearLayout>

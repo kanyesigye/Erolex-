@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tooedit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:text="Welcome "
+            android:textColor="#fff"
+            tools:ignore="HardcodedText" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:ignore="UselessLeaf"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/so"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:onClick="backOut"
+            android:text="Pick a menu from the list below to place an order    Or SIGN OUT"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout3"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tooedit"
+            android:layout_weight="0.81"
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
